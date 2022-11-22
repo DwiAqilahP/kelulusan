@@ -176,6 +176,7 @@ st.write("Prestasi Mahasiswa = Merupakan prestasi/penghargaan dalam bidang akade
 st.write("Forum Komunikasi Kuliah = Merupakan forum komunikasi yang dilakukan sekelompok mahasiswa untuk menyampaikan pendapat mengenai kegiatan kuliah di kampus.")
 st.write("kegiatan Organisasi di Kampus = Merupakan  wadah bagi mahasiswa untuk mengembangkan kapasitas kemahasiswaannya berupa aspirasi, inisiasi, atau gagasan-gagasan positif dan kreatif melalui berbagai kwgiatan yang relafan dengan tujuan pendidikan nasional serta visi dan misi institut perguruan tinggi itu sendiri yang bekerja")
 
+st.write("## Hasil:")
 if submit :
     if algoritma == 'KNN' :
         X_new = np.array([[ipk,	ppd, prestasi, fkk, ko]])
