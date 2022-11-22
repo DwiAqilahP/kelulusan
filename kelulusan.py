@@ -49,8 +49,8 @@ y = le.fit_transform(y)
 
 #Train and Test split
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=0)
-# st.write("Data Training", X_train)
-# st.write("Data Testing", X_test)
+st.write("Data Training", X_train)
+st.write("Data Testing", X_test)
 
 # Random Forest
 random_forest = RandomForestClassifier(n_estimators=100)
