@@ -154,16 +154,6 @@ ax.bar(['KNN', 'Random Forest','Naive Bayes','Decision Tree'],[accuracy_knn, acc
 plt.show()
 st.pyplot(fig)
 
-# plt.subplots(figsize=(12,8))
-# ax=sns.barplot(x='Model',y="Accuracy_score",data=result_df)
-# labels = (result_df["Accuracy_score"])
-# # add result numbers on barchart
-# for i, v in enumerate(labels):
-#     ax.text(i, v+1, str(v), horizontalalignment = 'center', size = 15, color = 'black')
-
-# st.pyplot(fig)
-
-
 st.write("""
             #### Pilih Metode Terbaik Menurut Prediksi Di atas :"""
             )
@@ -178,6 +168,13 @@ prestasi = st.sidebar.number_input("Prestasi Mahasiswa =", 0)
 fkk = st.sidebar.number_input("Forum Komunikasi Kuliah =", 0)
 ko = st.sidebar.number_input("Kegiatan Organisasi Di Kampus =", 0)
 submit = st.sidebar.button("Submit")
+
+st.write("## Deskripisi Inputan:")
+st.write("IPK Mahasiswa = Indeks Prestasi Kumulatif merupakan nilai rata-rata dari seluruh mata kuliah yang ditempuh sejak semester pertama sampai akhir. Sehingga IP akan dihitung per satu semester. Sementara untuk IPK akan dihitung dari semester pertama sampai semester akhir.")
+st.write("Pelatihan Pengembangan Diri = Merupakan kegiatan yang dirancang untuk mengembangkan diri melalui kegiatan identifikasi, pengkajian serta proses belajar yang terencana.")
+st.write("Prestasi Mahasiswa = Merupakan prestasi/penghargaan dalam bidang akademik dan non-akademik yang diperoleh secara individu maupun kelompok/tim selama masih tercatat aktif sebagai mahasiswa.")
+st.write("Forum Komunikasi Kuliah = Merupakan forum komunikasi yang dilakukan sekelompok mahasiswa untuk menyampaikan pendapat mengenai kegiatan kuliah di kampus.")
+st.write("kegiatan Organisasi di Kampus = Merupakan  wadah bagi mahasiswa untuk mengembangkan kapasitas kemahasiswaannya berupa aspirasi, inisiasi, atau gagasan-gagasan positif dan kreatif melalui berbagai kwgiatan yang relafan dengan tujuan pendidikan nasional serta visi dan misi institut perguruan tinggi itu sendiri yang bekerja")
 
 if submit :
     if algoritma == 'KNN' :
