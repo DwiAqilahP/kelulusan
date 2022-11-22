@@ -172,11 +172,11 @@ algoritma = st.selectbox(
 ('Random Forest', 'Decision Tree', 'KNN', 'Gaussian Naive Bayes')
 )
 
-ipk = st.sidebar.number_input("IPK =", 0.00)
+ipk = st.sidebar.number_input("IPK Mahasiswa", 0.00)
 ppd = st.sidebar.number_input("Pelatihan Pengembangan Diri =", 0)
-prestasi = st.sidebar.number_input("Prestasi =", 0)
+prestasi = st.sidebar.number_input("Prestasi Mahasiswa =", 0)
 fkk = st.sidebar.number_input("Forum Komunikasi Kuliah =", 0)
-ko = st.sidebar.number_input("Kegiatan Organisasi =", 0)
+ko = st.sidebar.number_input("Kegiatan Organisasi Di Kampus =", 0)
 submit = st.sidebar.button("Submit")
 
 if submit :
