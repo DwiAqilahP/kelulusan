@@ -180,9 +180,9 @@ elif choose == "Dataset" :
         st.markdown('<p class="font"> Dataset</p>', unsafe_allow_html=True)    
     with col2:               # To display brand log
         st.image(logo, width=130 )
-    st.write("Data kelulusan (https://www.kaggle.com/code/baladikaalhariri/klasifikasi-dengan-random-forest-97-test/data) ",dataset)
-
-
+    kaggle_url = f"https://www.kaggle.com/code/baladikaalhariri/klasifikasi-dengan-random-forest-97-test/data"
+    st.write(f"Dataset yang digunakan adalah dataset kelulusan yang diambil dari situs kaggle [DATASET KELULUSAN]({kaggle_url}).")
+    st.write(dataset)
     
 elif choose == "Data Training" :
     col1, col2 = st.columns( [0.8, 0.2])
