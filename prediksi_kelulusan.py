@@ -137,7 +137,7 @@ if choose == "Home":
         if algoritma == "Random Forest" :           
             prediction_rf=rf.predict([[ip1,ip2,ip3,ip4]])
             score1 = rf.score(x_test, y_test)
-            if prediction_rf[0] == 0:
+            if prediction_rf[0] == 1:
                 pred = ("Tepat Waktu")
             else:
                 pred = ("Tidak Tepat Waktu")
@@ -146,7 +146,7 @@ if choose == "Home":
         elif algoritma == "Decision Tree" :
             prediction_dt=dt.predict([[ip1,ip2,ip3,ip4]])
             score1 = dt.score(x_test, y_test)
-            if prediction_dt[0] == 0:
+            if prediction_dt[0] == 1:
                 pred = "Tepat Waktu"
             else:
                 pred = "Tidak Tepat Waktu"
@@ -155,7 +155,7 @@ if choose == "Home":
         elif algoritma == "KNN" :
             prediction_knn=knn.predict([[ip1,ip2,ip3,ip4]])
             score1 = knn.score(x_test, y_test)
-            if prediction_knn[0] == 0:
+            if prediction_knn[0] == 1:
                 pred = "Tepat Waktu"
             else:
                 pred = "Tidak Tepat Waktu"
@@ -164,7 +164,7 @@ if choose == "Home":
         if algoritma == "Gaussian Naive Bayes" :
             prediction_gnb=gnb.predict([[ip1,ip2,ip3,ip4]])
             score1 = gnb.score(x_test, y_test)
-            if prediction_gnb[0] == 0:
+            if prediction_gnb[0] == 1:
                 pred = "Tepat Waktu"
             else:
                 pred = "Tidak Tepat Waktu"
